@@ -1,6 +1,6 @@
 ##################################################################################################################################################################
 # Adapted from following:
-# - Rocker RStudio container using new versioned paradigm: https://github.com/rocker-org/rocker-versioned2/blob/master/dockerfiles/Dockerfile_rstudio_4.0.2
+# - Rocker RStudio container using new versioned paradigm: https://github.com/rocker-org/rocker-versioned2/blob/master/dockerfiles/Dockerfile_rstudio_4.0.3
 # - license: GPLV2
 ##################################################################################################################################################################
 

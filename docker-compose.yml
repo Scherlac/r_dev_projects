@@ -6,10 +6,10 @@ services:
       context: ./rstudio_docker
     container_name: rstudiopreview
     volumes:
-      - /home/eric/r_dev_projects:/home/eric/r_dev_projects
-      - /home/eric/.ssh:/home/eric/.ssh
+      - /home/richardjacton/r_dev_projects:/home/richardjacton/r_dev_projects
+      - /home/richardjacton/.ssh:/home/richardjacton/.ssh
       - /opt/local/renv/cache:/renv/cache
-      - /home/eric/r_dev_projects/rstudio_config_dir:/home/eric/.config/rstudio
+      - /home/richardjacton/r_dev_projects/rstudio_config_dir:/home/richardjacton/.config/rstudio
     restart:
       unless-stopped
     ports:
