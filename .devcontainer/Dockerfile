@@ -6,10 +6,10 @@
 FROM rocker/r-ver:4.0.2
 
 # Options for setup script
-ARG INSTALL_ZSH="false"
-ARG INSTALL_FISH="true"
+ARG INSTALL_ZSH="true"
+ARG INSTALL_FISH="false"
 ARG UPGRADE_PACKAGES="true"
-ARG USERNAME=eric
+ARG USERNAME=richardjacton
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
