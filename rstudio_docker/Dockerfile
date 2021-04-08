@@ -19,6 +19,9 @@ RUN apt-get update \
 RUN /rocker_scripts/install_rstudio.sh
 RUN /rocker_scripts/install_pandoc.sh
 
+# no login timeouts for local use
+RUN echo "auth-timeout-minutes=0" >> /etc/rstudio/rserver.conf
+
 # install key dependencies of certain packages that could be installed later
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
