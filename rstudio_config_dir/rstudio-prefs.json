@@ -3,8 +3,18 @@
     "load_workspace": false,
     "auto_append_newline": true,
     "font_size_points": 12,
-    "editor_theme": "Tomorrow Night 80s",
-    "posix_terminal_shell": "zsh",
+    "editor_theme": "Monokai",
+    "posix_terminal_shell": "bash",
     "default_project_location": "~/r_dev_projects",
-    "initial_working_directory": "~"
+    "initial_working_directory": "~",
+    "use_spaces_for_tab": false,
+    "num_spaces_for_tab": 4,
+    "show_invisibles": true,
+    "show_indent_guides": true,
+    "scroll_past_end_of_document": true,
+    "rainbow_parentheses": true,
+    "default_encoding": "UTF-8",
+    "syntax_color_console": true,
+    "server_editor_font_enabled": true,
+    "server_editor_font": "Fira Code"
 }

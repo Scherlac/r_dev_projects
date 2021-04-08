@@ -52,7 +52,7 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends dotnet-sdk-3.1
 
 # ensure that the renv package cache env var is accessible in default R installation
-RUN echo "RENV_PATHS_CACHE=/renv/cache" >> /usr/local/lib/R/etc/Renviron
+RUN echo "RENV_PATHS_CACHE=~/renv/cache" >> /usr/local/lib/R/etc/Renviron
 
 # copy the modified .Rprofile template to the renv cache
 COPY library-scripts/.Rprofile-vscode /renv/.Rprofile-vscode

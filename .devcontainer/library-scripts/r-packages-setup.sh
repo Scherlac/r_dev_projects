@@ -8,5 +8,5 @@ install2.r languageserver renv remotes
 installGithub.r nx10/httpgd
 
 # establish renv environment variables in users .Renviron file
-mkdir -p /renv/cache
-echo "RENV_PATHS_CACHE=/renv/cache" >> /usr/local/lib/R/etc/Renviron
+mkdir -p ~/renv/cache
+echo "RENV_PATHS_CACHE=~/renv/cache" >> /usr/local/lib/R/etc/Renviron

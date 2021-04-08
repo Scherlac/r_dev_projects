@@ -34,7 +34,7 @@ RUN apt-get update \
 
 RUN pip3 install radian
 
-RUN echo "RENV_PATHS_CACHE=/renv/cache" >> /usr/local/lib/R/etc/Renviron
+RUN echo "RENV_PATHS_CACHE=~/renv/cache" >> /usr/local/lib/R/etc/Renviron
 
 # [Optional] Uncomment this section to add addtional system dependencies needed for project
 # RUN apt-get update \
