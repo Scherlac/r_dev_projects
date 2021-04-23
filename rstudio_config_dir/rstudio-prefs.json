@@ -2,7 +2,7 @@
     "save_workspace": "never",
     "load_workspace": false,
     "auto_append_newline": true,
-    "font_size_points": 12,
+    "font_size_points": 11,
     "editor_theme": "Monokai",
     "posix_terminal_shell": "bash",
     "default_project_location": "~/r_dev_projects",
@@ -16,5 +16,7 @@
     "default_encoding": "UTF-8",
     "syntax_color_console": true,
     "server_editor_font_enabled": true,
-    "server_editor_font": "Fira Code"
+    "server_editor_font": "Fira Code",
+    "source_with_echo": true,
+    "jobs_tab_visibility": "shown"
 }
