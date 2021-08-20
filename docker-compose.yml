@@ -9,7 +9,9 @@ services:
       - /home/${USERNAME}/:/home/${USERNAME}/
       - /tank/${USERNAME}/:/tank/${USERNAME}/
       - /home/${USERNAME}/.ssh:/home/${USERNAME}/.ssh
-      - /opt/local/renv/cache:/renv/cache
+      - /home/${USERNAME}/Zotero:/home/${USERNAME}/Zotero
+      - /opt/local/renv/cache:/home/${USERNAME}/renv/cache
+      - /opt/local/AnnotationHub/cache:/home/${USERNAME}/.cache/AnnotationHub
       - /home/${USERNAME}/r_dev_projects/rstudio_config_dir:/home/${USERNAME}/.config/rstudio
     restart:
       unless-stopped

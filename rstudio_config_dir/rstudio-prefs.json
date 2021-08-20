@@ -5,7 +5,7 @@
     "font_size_points": 11,
     "editor_theme": "Monokai",
     "posix_terminal_shell": "bash",
-    "default_project_location": "~/r_dev_projects",
+    "default_project_location": "~/rlib_projects",
     "initial_working_directory": "~",
     "use_spaces_for_tab": false,
     "num_spaces_for_tab": 4,
@@ -18,5 +18,34 @@
     "server_editor_font_enabled": true,
     "server_editor_font": "Fira Code",
     "source_with_echo": true,
-    "jobs_tab_visibility": "shown"
+    "jobs_tab_visibility": "shown",
+    "panes": {
+        "quadrants": [
+            "Source",
+            "Console",
+            "TabSet1",
+            "TabSet2",
+            "HiddenTabSet"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Connections",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Files",
+            "Plots",
+            "Packages",
+            "Help",
+            "Viewer"
+        ],
+        "hiddenTabSet": [],
+        "console_left_on_top": false,
+        "console_right_on_top": true,
+        "additional_source_columns": 1
+    }
 }
