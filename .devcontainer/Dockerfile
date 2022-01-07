@@ -3,13 +3,13 @@
 # licence: MIT
 ###################################################################################################################
 
-FROM rocker/r-ver:4.0.2
+FROM rocker/r-ver:4.1.0
 
 # Options for setup script
 ARG INSTALL_ZSH="true"
 ARG INSTALL_FISH="false"
 ARG UPGRADE_PACKAGES="true"
-ARG USERNAME=richardjacton
+ARG USERNAME
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
@@ -29,12 +29,11 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends software-properties-common libssl-dev libxml2-dev libcurl4-openssl-dev python3-pip pandoc \
-    && apt-get -y install --no-install-recommends libfreetype6-dev libfontconfig1-dev \
-    && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* 
+    && apt-get -y install --no-install-recommends libfreetype6-dev libfontconfig1-dev tk \
+    && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
 # install R packages needed for VSCode interaction and package management
-RUN install2.r languageserver renv remotes
-RUN installGithub.r nx10/httpgd
+RUN install2.r languageserver renv remotes httpgd
 
 # install radian via python and pip3
 RUN apt-get update \
@@ -64,4 +63,3 @@ COPY library-scripts/.Rprofile-vscode /renv/.Rprofile-vscode
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
-
